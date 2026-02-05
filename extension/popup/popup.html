@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="../assets/icon.png" alt="Logo" class="logo">
+      <h1>SentinAI</h1>
+      <button id="manage-btn" class="manage-btn" title="Manage Allow-list">⚙️</button>
+    </div>
+    
+    <div id="loading" class="status-box">
+      <p>Analyzing...</p>
+    </div>
+
+    <!-- Main result view -->
+    <div id="result" class="hidden">
+      <div id="risk-badge" class="badge"></div>
+      
+      <div id="summary-section">
+        <h2 id="risk-score"></h2>
+        <p id="risk-level-text"></p>
+      </div>
+
+      <div class="details">
+        <h3>Detected Issues</h3>
+        <ul id="issues-list"></ul>
+      </div>
+
+      <div id="consent-section" class="hidden">
+        <h3>Consent Risks</h3>
+        <p id="consent-text"></p>
+      </div>
+
+      <div class="actions">
+        <button id="allow-btn">Allow Site</button>
+        <button id="dismiss-btn">Dismiss</button>
+      </div>
+      
+      <p id="confidence-note" class="note"></p>
+    </div>
+
+    <!-- View for when a site is on the allow-list -->
+    <div id="allowed-view" class="hidden status-box">
+        <p>This site is on your allow-list.</p>
+        <button id="remove-allow-btn">Remove from Allow-list</button>
+    </div>
+    
+    <div id="error" class="hidden">
+      <p>Analysis failed. Try reloading.</p>
+    </div>
+
+    <!-- Settings view for managing allow-list -->
+    <div id="settings-view" class="hidden">
+        <h3>Allowed Sites</h3>
+        <ul id="allowed-sites-list"></ul>
+        <button id="reset-allow-list-btn">Reset Allow-list</button>
+    </div>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

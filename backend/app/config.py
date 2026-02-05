@@ -1,0 +1,4 @@
+APP_TITLE = "SentinAI Backend"
+APP_VERSION = "1.0"
+API_HOST = "0.0.0.0"
+API_PORT = 8000

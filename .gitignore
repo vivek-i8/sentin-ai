@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+pokemon/
+
+# Chrome / Node
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Internal design docs (keep private)
+docs/

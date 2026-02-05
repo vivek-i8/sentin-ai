@@ -1,0 +1,110 @@
+body {
+  width: 320px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+}
+
+.container {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.status-box {
+  text-align: center;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+
+.badge {
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.risk-low {
+  background-color: #2ecc71;
+}
+
+.risk-medium {
+  background-color: #f1c40f;
+  color: #333;
+}
+
+.risk-high {
+  background-color: #e74c3c;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+.note {
+  font-size: 11px;
+  color: #888;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.actions {
+  margin-top: 16px;
+  text-align: center;
+}
+
+button {
+  background-color: #3a7afe;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2a6ae0;
+}
